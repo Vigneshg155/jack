@@ -1,0 +1,19 @@
+<h2>Table</h2>
+<table class="table">
+    <thead>
+        <tr>
+          <th>SNo</th>
+          <th>Name</th>
+          <th>Director</th>
+          <th>Hero</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let m of movie; let i=index">
+        <td>{{i+1}}</td>
+         <td>{{m.name}}</td>
+         <td>{{m.director}}</td>
+         <td>{{m.hero}}</td>
+        </tr>
+      </tbody>
+</table>
